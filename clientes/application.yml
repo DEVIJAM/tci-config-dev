@@ -17,7 +17,7 @@ server:
 spring:
   flyway:
     enabled: true
-    url: jdbc:mysql://localhost:3306/db01?allowPublicKeyRetrieval=false&useSSL=true&requireSSL=true&serverTimezone=UTC&encrypt=true&autoReconnect=true
+    url: jdbc:mysql://db:3306/db01?allowPublicKeyRetrieval=false&useSSL=true&requireSSL=true&serverTimezone=UTC&encrypt=true&autoReconnect=true
     user: root
     password: "{cipher}AgAZjOh3aGhrqB+KtoYQRVu2M8YzhQMLZOnsZBOLd406MdNcrx8IgRIdBCOD5MbEkgnZGgsJAMjXQ4E7bXZIQuPAR0xwtTzl+SjhMyKNHdIolXurFdHiWLIfCBki3dClT0YXevoRqX6Y45ZN32FDpryoTFFThOLgp6lyaNIzvx16oS+g9DL0C/WL8stjuY6Ck/0nWsubFGdTi3Y4wdXI26NFUQa1IFyvnaz9dcG7xqivQKxAPV5ml4lxyedza0POH5UgsLaBzYnKvZ0Fy+bwFfNQ5gkUqIdAluxueWgUFFtBwrKZvIOJ8ZYYOykcKYlj5GJQ041DB+GR4vWSJLRxd8AaIPJcqJ4TPvSI8eWZMxIUgU4Uh7Rrv65ExdIFciUqLgM/o2nchRMkXkiyBg7E5rMWr3Ui9mPt0ZyiOI0XB+2WOzEGEbpFdNGtUpou3kOxnPCqMPz9TFuGx+rv/CbR9wbA+QIoSt3i8Rg7Rkvk0/5bU57yC+8IrUS0lFCxi0VC7F+gedy/px4eoB9uo6nX72A8w/KWZj56jKODzBTt0r5GVYrlfwIbJcT/oNGpX3JhG+RpyrBQkTxvp7NBv/sFueNp0bVlCJixrSax7ILQ5P4j+zPqgYi4Rnj67NKj+t4zicOU1pS401u21RGfWf/Mnm+1X5ZN3+DzeB8CE+IYv0lUC5czdRxmCVQIE5NlE8Hujwc+Jd1Riv9hCuC0BOrPrOkg"
     locations: classpath:db/migration/lab01
@@ -32,7 +32,7 @@ lab01:
     username: rabbitmq
     password: rabbitmq
   db01:
-    url: jdbc:mysql://localhost:3306/db01?allowPublicKeyRetrieval=false&useSSL=true&requireSSL=true&serverTimezone=UTC&encrypt=true&autoReconnect=true
+    url: jdbc:mysql://db:3306/db01?allowPublicKeyRetrieval=false&useSSL=true&requireSSL=true&serverTimezone=UTC&encrypt=true&autoReconnect=true
     username: lab01user
     password: lab01userpwd
     driverClassName: com.mysql.cj.jdbc.Driver
